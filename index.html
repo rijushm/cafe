@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Coffee shop</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+  <style>
+body{
+margin: 0;
+padding: 0;
+color: #fff;
+font-family: 'Ubuntu', sans-serif;
+}
+
+.logo{
+font-family: 'Merriweather', serif;
+}
+header{
+background: url("https://images.unsplash.com/photo-1580933073521-dc49ac0d4e6a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1049&q=80.jpg");
+height: 420px;
+}
+.cup-img{
+width: 390px;
+transform: rotate(-25deg);
+position: relative;
+top: 30px;
+left: -60px;
+animation: anim 4s linear infinite;
+}
+@keyframes anim{
+0%{ top: 25px;  }
+50%{ top:40px;   }
+100%{  top:25px;   }
+}
+.svg-design{
+position: relative;
+top: 00px;
+left: 0px;
+}
+.part1{
+
+}
+.part2{
+background: url("https://images.unsplash.com/photo-1587982687159-5c4123da791a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1100&q=60.jpg");
+height: 400px;
+color: #333;
+}
+.part4{
+background: url("https://images.unsplash.com/photo-1520006635556-32d930402dc6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1100&q=60.jpg");
+height: 410px;
+}
+.features{
+margin-top: 40px;
+padding: 40px;
+padding-bottom: 5px;
+border-radius: 4px;
+}
+.features h2{
+border: none;
+border-bottom: 1px solid #fff;
+}
+.part4 img{
+width: 100px;
+padding: 8px;
+background: #fff;
+border-radius: 50%;
+position: relative;
+top: -40px;
+animation: anim2 3s linear infinite;
+}
+@keyframes anim2{
+0%{left: 0;   }
+25%{left: -15px; }
+75%{left:0;   }
+100{left:15px;  }
+
+}
+.img-div{
+width: 100%;
+height: 12px;
+background:#fff;
+position: relative;
+top: 50px;
+}
+.quality-img{
+width: 200px;
+}
+.part6{
+background: url("https://images.unsplash.com/photo-1483274816418-3975509c8f78?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=60.jpg");
+width: 100%;
+
+}
+.part6-1 h1{
+font-family: lobster;
+}
+footer{
+background: url("https://images.unsplash.com/photo-1445116572660-236099ec97a0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80.jpg");
+}
+.social-icon i{
+font-size: 20px;
+border-radius: 50%;
+background: #fff;
+padding: 15px;
+margin: auto 5px;
+transition: .4s;
+}
+.social-icon i:hover{
+font-size: 23px;
+}
+.social-icon i:nth-child(1):hover{
+color: DODGERBLUE;
+}
+.social-icon i:nth-child(2):hover{
+color: #dc2743; 
+}
+.social-icon i:nth-child(3):hover{
+color: green;
+}
+.social-icon i:nth-child(4):hover{
+color: black;
+}
+
+
+.social-icon .fb{
+padding: 15px 18px;
+}
+@media screen and (max-width:900px){
+.cup-img{
+display: none;
+}
+.part2{
+height: 510px;
+}
+.part4{
+background: url("https://images.unsplash.com/photo-1524350876685-274059332603?ixlib=rb-1.2.1&auto=format&fit=crop&w=1100&q=60.jpg");
+height: 700px;
+}
+.features{
+margin: 20px;
+margin-top: 60px;
+padding: 0;
+}
+.part5 img{
+display: none;
+}
+}
+</style>
+</head>
+<body>
+<header>
+<div class="bs-example ">
+    <nav class="navbar navbar-expand-md navbar-light navigation">
+        <a href="#" class="navbar-brand">
+            <img class="mt-0 mb-2" src="https://www.nicepng.com/png/full/129-1293351_coffee-cup-icon-coffee-cup-icon-white.png" height="28" alt="Coffee shop"><span class="text-light ml-2 logo">Coffee Shop</span>
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon text-light"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav">
+                <a href="#" class="nav-item nav-link text-light active">Home</a>
+                <a href="#" class="nav-item nav-link text-light ">Service</a>
+                <a href="#" class="nav-item nav-link text-light ">Contact</a>
+                <a href="#" class="nav-item nav-link disabled text-light " tabindex="-1">Report</a>
+            </div>
+            <div class="navbar-nav ml-auto">
+                <a href="#" class="nav-item nav-link text-light">Login</a>
+            </div>
+        </div>
+    </nav>
+</div>
+
+
+<div class="container-fluid hero">
+<div class="row">
+<div class="col-sm-6 m-5">
+<h1 class="">Welcome to the coffee world</h1>
+<h4 class="">A lot can happen over coffee, It's awesome!</h4>
+<button type="button" class="btn mt-3 btn-light">Book now</button>
+</div>
+
+<div class="">
+<img src="https://www.kindpng.com/picc/b/297/2971979.png" class="img-fluid cup-img" />
+</div>
+</div>
+</div>
+</header>
+
+<section class="text-center mt-4">
+<div class="text-secondary part1">
+<h1 class="mt-5"><i class="fas fa-quote-right"></i></h1>
+<p class="">“We want to do a lot of stuff; we’re not in great shape.<br>We didn’t get a good night’s sleep. We’re a little depressed.<br>Coffee solves all these problems in one delightful little cup.”</p>
+<i>~ Jerry Seinfeld</i>
+</div>
+</section>
+
+<div class="container-fluid part2">
+<div class="text-left">
+<h1 class="m-5 pt-4 text-light">Start your day with a <span class="text-dark">black</span> coffee</h1>
+<h4 class="text-light mt-4 ml-5">Some special benefits of black coffee</h4>
+
+<div class="list mt-4 ml-5">
+<h5 class="text-light" ><i class="fas fa-check-circle"></i> 
+ Improve Energy Levels</h5>
+<h5 class="text-light" ><i class="fas fa-check-circle"></i> 
+Help You Burn Fat</h5>
+<h5 class="text-light" ><i class="fas fa-check-circle"></i> 
+ Contains Essential Nutrients</h5>
+</div>
+<button type="button" class="btn btn-dark mt-5 ml-5">Order now</button><button type="submit" class="mt-5 ml-2 btn btn-light">Menu</button>
+</div>
+</div>
+
+
+<div class="container mt-5 mb-4 text-center text-dark part3">
+<div class="text-center row">
+<div class="col-sm-3">
+<h2 class="pb-0 mb-0">3.7K</h2>
+<p>Daily customers</p>
+</div>
+<div class="col-sm-3">
+<h2 class="pb-0 mb-0">3K</h2>
+<p>Delivery</p>
+</div>
+<div class="col-sm-3">
+<h2 class="pb-0 mb-0">35</h2>
+<p>Workers</p>
+</div>
+<div class="col-sm-3">
+<h2 class="pb-0 mb-0">50+</h2>
+<p>Items</p>
+</div>
+</div>
+</div>
+
+<div class="part4 mb-0 text-center">
+<div class="img-div">
+<img class="" src="https://cdn3.iconfinder.com/data/icons/hotel-service-gray-set-1/100/Untitled-1-20-512.png" /></div>
+<div class="row m-4">
+<div class="col-sm-6 features text-justify">
+<h2 class="text-center">Quality drinks</h2>
+<p class="" >High-quality coffee should balance acidity, sweetness, and bitterness in one sip, with a smooth flavor, and no off-notes. That's a complex way to say that that good quality coffee should taste good. It shouldn't taste burnt, charred, or raw. It should have complex and nuanced flavors.</p>
+</div>
+<div class="col-sm-6 features text-justify">
+<h2 class="text-center">Delicious snacks</h2>
+<p class="" >High-quality coffee should balance acidity, sweetness, and bitterness in one sip, with a smooth flavor, and no off-notes. That's a complex way to say that that good quality coffee should taste good. It shouldn't taste burnt, charred, or raw. It should have complex and nuanced flavors.</p>
+</div>
+
+</div>
+<button type="button" class="m-0 mb-5 btn btn-light">Explore our menu</button>
+</div>
+
+
+<!-- quality -->
+<div class="container mt-5 mb-5 text-secondary part5">
+<div class="row">
+<div class="col-sm-6">
+<img class="quality-img" src="https://ragingbean.com/wp-content/uploads/2018/07/depositphotos_36983717-stock-photo-roasted-coffee-beans-and-leaves.png"/></div>
+<div class="col-sm-6">
+<h3 class="">100% pure beans</h3>
+<p>High-quality coffee should balance acidity, sweetness, and bitterness in one sip, with a smooth flavor, and no off-notes.</p>
+</div></div>
+
+<div class="row mt-5">
+<div class="col-sm-6">
+<h3 class="">Neat and Clean</h3>
+<p>High-quality coffee should balance acidity, sweetness, and bitterness in one sip, with a smooth flavor, and no off-notes.</p>
+</div>
+<div class="col-sm-6">
+<img class="quality-img" src="https://www.searchpng.com/wp-content/uploads/2019/01/Coffee-Cup-PNG-Image-1.png"/></div>
+</div>
+
+
+<div class="row mt-5">
+<div class="col-sm-6">
+<img class="quality-img" src="https://gallery.yopriceville.com/var/resizes/Free-Clipart-Pictures/Coffee-PNG/Coffe_Heart_PNG_Clipart.png?m=1507172107.png"/></div>
+<div class="col-sm-6">
+<h3 class="">Health and Safety</h3>
+<p>High-quality coffee should balance acidity, sweetness, and bitterness in one sip, with a smooth flavor, and no off-notes.</p>
+</div>
+</div>
+</div>
+
+
+<section>
+<div class="container-fluid pt-4 pb-4 row text-center part6">
+<div class="col-sm-6 part6-1">
+<h1 class="mt-4">Feedback</h1>
+<div class="bs-example">
+    <form action="" method="post">
+        <div class="form-group">
+            
+            <input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
+        </div>
+        <div class="form-group">
+            
+            <input type="text" class="form-control" id="inputName" placeholder="Full name" required>
+        </div>
+    <textarea class="mb-2 form-control" placeholder="Type message.."></textarea>
+        <div class="checkbox">
+            <label><input type="checkbox"> Send me offers</label>
+        </div>
+      
+        <button type="submit" class="mb-4 btn btn-primary">Submit</button>
+    </form>
+</div>
+
+</div>
+<div class="col-sm-6">
+<h3 class="">Address</h3>
+<p>Budge budge, Kolkata, India, Kol 700137</p>
+<button type="button" class="mb-3 btn btn-light">Get direction</button>
+<h4 class="">Email Id</h3>
+<p>rijushm@gmail.com</p>
+<h3 class="">Telephone</h4>
+<p>(+91) 123456789 </p>
+<div class="text-dark social-icon">
+<i class="fab fa-facebook-f fb"></i>
+<i class="fab fa-instagram"></i>
+<i class="fab fa-google"></i>
+<i class="fab fa-github"></i>
+</div>
+</div>
+<h5 class="mt-5 ml-5 mb-1">© 2020 All Rights Reserved</h5>
+</div>
+</section>
+
+<footer>
+
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>
